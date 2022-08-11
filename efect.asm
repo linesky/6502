@@ -9,6 +9,7 @@ sta $300,x
 sta $400,x
 sta $500,x
 inx
+inx
 cmp $ff,x
 bne again
 hlt:
