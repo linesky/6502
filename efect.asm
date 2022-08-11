@@ -4,7 +4,7 @@ lda #$2
 sta $1
 lda #$0
 sta $0
-ldy #$32
+ldy #$20
 again:
 lda #$5
 ldx #$0
@@ -30,7 +30,7 @@ lda #$2
 sta $1
 lda #$1f
 sta $0
-ldy #$32
+ldy #$20
 back:
 lda #$5
 ldx #$0
