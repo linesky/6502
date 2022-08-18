@@ -7,9 +7,9 @@ lda #$2
 sta $16
 lda #$0
 sta $15
-lda #$3
+lda #$4
 sta $18
-lda #$fa
+lda #$0
 sta $17
 jsr fill
 jsr hlt
