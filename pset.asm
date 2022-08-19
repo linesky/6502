@@ -17,12 +17,10 @@ jsr hlt
 ;$19,color
 pset:
 lda #$1f
-ldx $1a
-cmp x
+cmp $1a
 bcs pset12
 lda #$1f
-ldx $1b
-cmp x
+cmp $1b
 bcs pset12
 lda #$1
 sta $17
