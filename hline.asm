@@ -11,7 +11,7 @@ sta $1b
 lda #$0
 sta $1a
 ;y2=10
-lda #32
+lda #31
 sta $1c
 ;call pixel
 jsr hline
