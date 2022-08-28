@@ -26,23 +26,25 @@ jsr hlt
 ;$19,color
 hline:
 clc 
-bcc hline40
 ;check if x and y x2<32
-lda #$1f
-cmp $1c
-bcs hline12
-lda #$1f
-cmp $1a
-bcs hline12
-lda #$1f
-cmp $1b
-bcs hline12
-hline40:
+lda $1c
+and #31
+sta $1c
+lda $1a
+and #31
+sta $1a
+lda $1b
+and #31
+sta $1b
 ; fill size 1 fill 1 byte
 lda $1c
 clc
 sbc $1a
 and #31
+cmp #0
+bne hline40
+lda #1
+hline40:
 sta $17
 ;fill size 1 byte fill 1 byte hig byte
 lda #$0
