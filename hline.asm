@@ -28,19 +28,19 @@ hline:
 clc 
 ;check if x and y x2<32
 lda $1c
-and #63
+and #31
 sta $1c
 lda $1a
-and #63
+and #31
 sta $1a
 lda $1b
-and #63
+and #31
 sta $1b
 ; fill size 1 fill 1 byte
 lda $1c
 clc
 sbc $1a
-and #31
+and #63
 cmp #0
 bne hline40
 lda #1
