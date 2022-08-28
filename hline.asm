@@ -42,6 +42,7 @@ hline40:
 lda $1c
 clc
 sbc $1a
+and #31
 sta $17
 ;fill size 1 byte fill 1 byte hig byte
 lda #$0
